@@ -1,0 +1,16 @@
+(.ml-devops-project) opuluiche@opuluiche-server:~/local_environment/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "mlpredict" already exists
+NAME        READY   STATUS    RESTARTS   AGE
+mlpredict   1/1     Running   0          88m
+Forwarding from 127.0.0.1:8000 -> 5000
+Forwarding from [::1]:8000 -> 5000
+Handling connection for 8000
+Handling connection for 8000
+
+(.ml-devops-project) opuluiche@opuluiche-server:~/local_environment/DevOps_Microservices/project-ml-microservice-kubernetes$ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
